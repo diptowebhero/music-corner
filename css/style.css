@@ -157,3 +157,41 @@ header h1 {
     opacity: 1;
     color: white;
 }
+/* * album  */
+
+.albums-container {
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 0;
+  place-items: center;
+  padding-bottom: 20px;
+}
+
+.album {
+  background-color: var(--purple);
+  height: 100%;
+  width: 230px;
+  justify-self: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.album-image-container {
+  height: 200px;
+  width: 230px;
+  overflow: hidden;
+}
+
+.album-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.album-name {
+  text-align: center;
+  padding: 10px;
+  color: var(--dark-gray);
+}
